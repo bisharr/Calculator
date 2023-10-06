@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .calculator{
+      max-width: 400px;
+      margin: 0 auto;
+      height: 100vh;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .output{
+      background-color: rgba(51, 128, 51, 0.741);
+      padding: 5px;
+      position: relative;
+      /* border-radius: 8px; */
+
+    }
+
+    .calculator p{
+      color: orange;
+      font-size: 32px;
+    }
+
+    .display{
+      text-align: right;
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.668);
+    }
+
+    .display-3{
+     position: absolute;
+     bottom: 0;
+     left: 10px;
+    }
+    
+    .display-1{
+     font-size: 24px;
+    }
+    .input{
+      background-color: rgb(36, 43, 43);
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(4,1fr);
+   
+    }
+    .button{
+      width: 100%;
+      height: 80px;
+      background-color: #242220d1;
+      border: 1px solid black;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      border-radius: 31px;
+      transition: all 0.3s;
+
+    }
+
+     .button:hover{
+      background-color: rgba(0, 0, 0, 0.509);
+     }
+
+     .button-0{
+      grid-column: 1/3;
+      grid-row: 5;
+     }
+
+     .button-c{
+      background-color: dodgerblue;
+     }
+
+     .button-c:hover{
+      background-color: rgba(30, 143, 255, 0.701);
+     }
+
+     .equal{
+      background-color: rgba(255, 166, 0, 0.971);
+     }
+
+     .equal:hover{
+      background-color: rgba(255, 166, 0, 0.545);
+     }
+
+     .symbol{
+      background-color: rgba(0, 0, 0, 0.524);
+     }
+
+     .symbol:hover{
+      background-color: rgba(0, 0, 0, 0.345);
+     }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="output">
+      <p>bishar</p>
+      <div class="display display-1">0</div>
+      <div class="display display-2">0</div>
+      <div class="display display-3">0</div>
+    </div>
+    <div class="input">
+      <div class="button button-c">C</div>
+      <div class="button button-c">CE</div>
+      <div class="button symbol">%</div>
+      <div class="button symbol">/</div>
+      <div class="button">7</div>
+      <div class="button">8</div>
+      <div class="button">9</div>
+      <div class="button symbol">X</div>
+      <div class="button">4</div>
+      <div class="button">5</div>
+      <div class="button">6</div>
+      <div class="button symbol">-</div>
+      <div class="button">1</div>
+      <div class="button">2</div>
+      <div class="button">3</div>
+      <div class="button symbol">+</div>
+      <div class="button button-0">0</div>
+      <div class="button">.</div>
+      <div class="button equal">=</div>
+    </div>
+  </div>
+</body>
+</html>
